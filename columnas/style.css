@@ -1,0 +1,16 @@
+html{
+  font-size: 62.5%
+}
+body{
+  font-family: Arial;
+  font-size: 1.6rem;
+}
+.container{
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+}
+.item{
+  background: lightblue;
+  padding: 1rem;
+  border: 0.1rem solid red;
+}
