@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: Arial;
+  font-size: 1.6rem;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  height: 100vh;
+}
+.item{
+  background: lightblue;
+  padding: 1rem;
+  border: 0.1rem solid red;
+}
+.item:nth-of-type(1){
+  background: blue;
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item:nth-of-type(8){
+  /* grid-column: 1/span 3; */
+  grid-column: 1/-1;
+}
+.item:nth-of-type(7){
+  grid-column: 2/4;
+}
