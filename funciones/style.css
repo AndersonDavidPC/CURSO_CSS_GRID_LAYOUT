@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: Arial;
+  font-size: 1.6rem;
+}
+.container{
+  display: grid;
+  /* grid-template: 30rem 10rem 10rem/1fr 1fr 1fr; */
+  grid-template: 30rem 10rem 10rem/repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  gap: 10px  50px;
+}
+.item{
+  background: lightblue;
+  padding: 1rem;
+  border: 0.1rem solid red;
+  /* margin-right: 1rem;
+  margin-bottom: 1rem; */
+}
+.item:nth-of-type(4){
+  background: blue;
+  display: grid;
+  grid-template: auto auto auto/auto auto auto;
+}
+.item .item{
+  background: #f2f2f2;
+}
